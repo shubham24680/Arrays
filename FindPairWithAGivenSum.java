@@ -6,12 +6,15 @@ public class FindPairWithAGivenSum {
     public static void main(String[] args) throws IOException{
         BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
 
+        // Input
         System.out.print("Enter the length of the Array: ");
         int n = Integer.parseInt(buffer.readLine());
         System.out.print("Enter the element of the Array: ");
         int arr[] = new int[n];
         for(int i=0; i<n; i++)
             arr[i] = Integer.parseInt(buffer.readLine());
+
+        // Sorting
         sort(arr,n-1);
 
         System.out.print("Enter the no. of rotation: ");
